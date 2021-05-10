@@ -7,7 +7,7 @@ class App extends Component {
     this.state = {
       id: 0,
       person: {
-        fullName: "Jhon Doe",
+        fullName: "John Doe",
         bio: "FullStackjs Developer",
         imgSrc: "/Unknown.png",
         profession: "Web Developer",
@@ -41,11 +41,11 @@ class App extends Component {
           <div>
             <p>{this.state.id} seconds since componentDidMount</p>
             <div className="card">
-              <img src="/Unknown.png" className="img-top" alt="..." />
+              <img src="/Unknown.png" className="img-top" alt="john picture" />
               <div className="card-body">
-                <h3 className="card-title">{this.state.person.fullName}</h3>
-                <h5 className="card-title">{this.state.person.profession}</h5>
-                <p className="card-text">{this.state.person.bio}</p>
+                <h3>{this.state.person.fullName}</h3>
+                <h5>{this.state.person.profession}</h5>
+                <p>{this.state.person.bio}</p>
               </div>
             </div>
           </div>
